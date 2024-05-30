@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="calcultor.css">
+<title>calcultor</title>
+</head>
+
+<body>
+
+    <div class=""><img src="https://cdn-icons-png.flaticon.com/128/4139/4139153.png" alt="" width="50px" id="img"></div>
+<div class="container">
+    <input type="text" id="display" readonly>
+    <div class="buttons">
+        <button class="btn"
+            onclick=" process += '1'; document.querySelector('#display').value = process;">1</button>
+
+        <button class="btn"
+            onclick=" process += '2'; document.querySelector('#display').value = process;">2</button>
+
+        <button class="btn"
+            onclick=" process += '3'; document.querySelector('#display').value = process;">3</button>
+        <button class="btn"
+            onclick=" process += '4'; document.querySelector('#display').value = process;">4</button>
+        <button class="btn"
+            onclick=" process += '5'; document.querySelector('#display').value = process;">5</button>
+        <button class="btn"
+            onclick=" process += '6'; document.querySelector('#display').value = process;">6</button>
+        <button class="btn"
+            onclick=" process += '7'; document.querySelector('#display').value = process;">7</button>
+        <button class="btn"
+            onclick=" process += '8'; document.querySelector('#display').value = process;">8</button>
+        <button class="btn"
+            onclick=" process += '9'; document.querySelector('#display').value = process;">9</button>
+        <button class="btn"
+            onclick=" process += '0'; document.querySelector('#display').value = process;">0</button>
+        <button class="btn"
+            onclick=" process += '+'; document.querySelector('#display').value = process;">+</button>
+        <button class="btn green"
+            onclick=" process += '-'; document.querySelector('#display').value = process;">-</button>
+        <button class="btn green"
+            onclick=" process += '*'; document.querySelector('#display').value = process;">*</button>
+        <button class="btn green"
+            onclick=" process += '/'; document.querySelector('#display').value = process;">/</button>
+        <button class="btn green"
+            onclick=" process += '.'; document.querySelector('#display').value = process;">.</button>
+        <button class="btn green" onclick=" process = ''; document.querySelector('#display').value = process;">C</button>
+        <button class="btn green"
+            onclick=" let result = eval(process) ; process=result; document.querySelector('#display').value = process;" id="equal">=</button>
+    </div>
+</div>
+<script>
+    let process = '';
+    let display = document.querySelector('#display').value = process;
+    let body = document.querySelector("body")
+    let container  =document.querySelector('.container')
+
+    const image = document.querySelector('#img');
+
+    image.addEventListener('click',()=>{
+
+        document.body.classList.toggle('change')
+        container.classList.toggle('bg')
+       
+    })
+
+</script>
+</body>
+
+</html>

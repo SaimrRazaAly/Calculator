@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    /* background: black; */
+    background-image: radial-gradient(99.21% 99.21% at 50% 0, #B23BA6 0, #7D20CF 65.66%, #200B9F 100%);
+
+
+    color: #fff;
+    transition: all 0.5s;
+}
+.change {
+    color: black;
+    background: #fff;
+}
+
+.color{
+    background: transparent;
+}
+
+.container {
+    /* display: flex; */
+    margin: 10vh auto;
+    background: rgba(255, 255, 255,0.2);
+    height: auto;
+    width: 20%;
+    animation: bounce 5s linear infinite;
+}
+.bg{
+    background: rgba(0, 0, 0, 0.9);
+}
+@keyframes bounce {
+    0%,100% { transform:translateY(-5%); }
+  
+    50% { transform:translateY(0); }
+
+}
+
+
+input#display {
+    width: 100%;
+    position: relative;
+    padding: 20px 6px;
+    box-sizing: border-box;
+    outline: 0;
+    transition: 0.4s;
+    font-size: 25px;
+}
+
+input#display:focus {
+    border: 3px solid cadetblue;
+}
+
+
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+}
+
+button.btn {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    /* background: rgba(255,255,255,0.2); */
+    transition: 0.5s;
+    font-size: 30px;
+}
+
+button#equal {
+    width: 100%;
+    border-radius: 0;
+}
+
+img {
+    
+    display: block;
+    margin: 10px auto;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.btn:hover{
+    color: #fff;
+}.green{
+        transition: 0.3s;
+        color: green;
+    }
+    .green:hover , .btn:hover{
+        border-radius: 50%;
+        background: rgba(255,255,255,0.2);
+        
+    }
